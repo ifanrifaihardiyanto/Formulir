@@ -112,8 +112,8 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
             etTanggal.setError(null);
         }
 
-        tvHasil.setText("----------------- PEMBELIAN BERHASIL -----------------" + "\n Nama           :" + nama + "\nAsal             :" + Asal + "\nTujuan :" + Tujuan +
-                "Tanggal Keberangkatan : " + Tanggal + "\nKelas :" + hasil + "\nUsia" + Kereta + "\n" + NmK);
+        tvHasil.setText("----------------- PEMBELIAN BERHASIL -----------------" + "\nNama               :" + nama + "\nAsal             :" + Asal + "\nTujuan :" + Tujuan +
+                "\nTanggal Keberangkatan : " + Tanggal + "\nKelas            :" + hasil + "\nUsia            :" + Kereta + "\n" + NmK);
     }
 
     @Override
