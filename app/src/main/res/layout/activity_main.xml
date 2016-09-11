@@ -142,7 +142,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/bgbtn"
-            android:text="OK"
+            android:text="Proses"
             android:textColor="@android:color/white" />
 
         <TextView

@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         } else {
             etTujuan.setError(null);
         }
-        tvHasil.setText("------------------ PEMBELIAN BERHASIL ------------------" + "\n Nama :" + nama + "\nAsal :" + Asal + "\nTujuan :" + Tujuan +
+        tvHasil.setText("----------------- PEMBELIAN BERHASIL -----------------" + "\n Nama :" + nama + "\nAsal :" + Asal + "\nTujuan :" + Tujuan +
                 "\nKelas :" + hasil + "\nUsia" + Kereta + "\n" + NmK);
     }
 
