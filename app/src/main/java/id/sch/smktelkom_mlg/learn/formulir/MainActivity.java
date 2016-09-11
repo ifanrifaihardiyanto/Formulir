@@ -113,13 +113,13 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         }
 
         tvHasil.setText("----------------- PEMBELIAN BERHASIL -----------------" +
-                "\nNama                                   :" + nama +
-                "\nAsal                                      :" + Asal +
-                "\nTujuan                                  :" + Tujuan +
+                "\nNama                                   : " + nama +
+                "\nAsal                                      : " + Asal +
+                "\nTujuan                                 : " + Tujuan +
                 "\nTanggal Keberangkatan : " + Tanggal +
-                "\nKelas                                    :" + hasil +
-                "\nUsia                                      :" + Kereta +
-                "\nNama Kereta                        :" + NmK);
+                "\nKelas                                    : " + hasil +
+                "\nUsia                                      : " + Kereta +
+                "\nNama Kereta                      : " + NmK);
     }
 
     @Override
