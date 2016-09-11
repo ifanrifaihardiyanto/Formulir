@@ -36,18 +36,22 @@
             android:src="@drawable/logo" />
 
         <TextView
-            android:id="@+id/textViewTanggal"
+            android:id="@+id/textViewNama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/imageView"
-            android:text="Tanggal Keberangkatan" />
+            android:text="Nama" />
 
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/editTextTgl"
+            android:id="@+id/editTextNm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
 
         <TextView
             android:id="@+id/textViewAsal"
@@ -55,10 +59,14 @@
             android:layout_height="wrap_content"
             android:text="Asal" />
 
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <EditText
             android:id="@+id/editTextAsal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
 
         <TextView
             android:id="@+id/textViewTujuan"
@@ -66,10 +74,14 @@
             android:layout_height="wrap_content"
             android:text="Tujuan" />
 
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
         <EditText
             android:id="@+id/editTextTujuan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
 
         <TextView
             android:id="@+id/textViewKelas"
@@ -99,6 +111,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ekonomi" />
+
+            <TextView
+                android:id="@+id/textViewKrt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasil" />
         </RadioGroup>
 
         <TextView
@@ -120,7 +138,7 @@
             android:text="Anak-Anak" />
 
         <TextView
-            android:id="@+id/textViewNm"
+            android:id="@+id/textViewNmK"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nama Kereta" />
@@ -128,20 +146,25 @@
         <Spinner
             android:id="@+id/spinnerKereta"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:entries="@array/kereta" />
 
         <Button
             android:id="@+id/buttonOK"
+            style="@style/Base.TextAppearance.AppCompat.Title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="OK" />
+            android:background="@drawable/bgbtn"
+            android:text="OK"
+            android:textColor="@android:color/white" />
 
         <TextView
             android:id="@+id/textViewHasil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hasil" />
+
     </LinearLayout>
 
 </ScrollView>
