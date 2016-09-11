@@ -2,8 +2,28 @@
 <resources>
     <string-array name="kereta">
         <item>Bima</item>
-        <item>ndkw</item>
-        <item>Bima</item>
-        <item>Bima</item>
+        <item>Logawa</item>
+        <item>Kertajaya</item>
+        <item>Brantas</item>
+        <item>Kahuripan</item>
+        <item>Matarmaja	</item>
+        <item>Gajayana</item>
+        <item>Pasundan</item>
+        <item>Serayu</item>
+        <item>Krakatau Ekspres</item>
+        <item>Tumapel</item>
+        <item>Bangunkarta</item>
+        <item>Mutiara Timur</item>
+        <item>Mutiara Selatan</item>
+        <item>Sancaka</item>
+        <item>Malabar</item>
+        <item>Malioboro Ekspres</item>
+        <item>Majapahit</item>
+        <item>Jayabaya</item>
+        <item>Gaya Baru Malam</item>
+        <item>Senja Utama Solo</item>
+        <item>Senja Utama Yogya</item>
+        <item>Dhoho</item>
+        <item>Penataran</item>
     </string-array>
 </resources>

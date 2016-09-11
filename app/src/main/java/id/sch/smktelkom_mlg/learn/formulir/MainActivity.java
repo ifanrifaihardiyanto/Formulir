@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         spK = (Spinner) findViewById(R.id.spinnerKereta);
 
         tvHasil = (TextView) findViewById(R.id.textViewHasil);
-        tvkereta = (TextView) findViewById(R.id.textViewKrt);
+        tvkereta = (TextView) findViewById(R.id.textViewNmK);
 
 
         bOK.setOnClickListener(new View.OnClickListener() {
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         } else {
             etTujuan.setError(null);
         }
-        tvHasil.setText("--------------- PEMBELIAN BERHASIL ---------------" + "\n Nama :" + nama + "\nAsal :" + Asal + "\nTujuan :" + Tujuan +
+        tvHasil.setText("------------------ PEMBELIAN BERHASIL ------------------" + "\n Nama :" + nama + "\nAsal :" + Asal + "\nTujuan :" + Tujuan +
                 "\nKelas :" + hasil + "\nUsia" + Kereta + "\n" + NmK);
     }
 
@@ -108,6 +108,6 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         if (isChecked) nKereta += 1;
         else nKereta -= 1;
-        tvkereta.setText("Hobi (" + nKereta + " Terpilih");
+        tvkereta.setText("Hobi (" + nKereta + " Terpilih ");
     }
 }
