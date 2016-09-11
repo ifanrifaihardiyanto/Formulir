@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
     EditText etNm;
     EditText etAsal;
     EditText etTujuan;
+    EditText etTanggal;
     Button bOK;
     TextView tvHasil, tvkereta;
     RadioButton rbEks, rbBis, rbEk;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         etNm = (EditText) findViewById(R.id.editTextNm);
         etAsal = (EditText) findViewById(R.id.editTextAsal);
         etTujuan = (EditText) findViewById(R.id.editTextTujuan);
+        etTanggal = (EditText) findViewById(R.id.editTextTanggal);
         bOK = (Button) findViewById(R.id.buttonOK);
         rbEks = (RadioButton) findViewById(R.id.radioButtonEks);
         rbBis = (RadioButton) findViewById(R.id.radioButtonBis);
@@ -61,6 +63,7 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         String nama = etNm.getText().toString();
         String Asal = etAsal.getText().toString();
         String Tujuan = etTujuan.getText().toString();
+        String Tanggal = etTanggal.getText().toString();
         String hasil = null;
         String NmK = spK.getSelectedItem().toString();
         String Kereta = "\n Kereta";
@@ -100,8 +103,17 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         } else {
             etTujuan.setError(null);
         }
-        tvHasil.setText("----------------- PEMBELIAN BERHASIL -----------------" + "\n Nama :" + nama + "\nAsal :" + Asal + "\nTujuan :" + Tujuan +
-                "\nKelas :" + hasil + "\nUsia" + Kereta + "\n" + NmK);
+
+        if (Tanggal.isEmpty()) {
+            etTanggal.setError("Belum Diisi");
+        } else if (Tanggal.length() < 10) {
+            etTanggal.setError("Minimal 10 Karakter");
+        } else {
+            etTanggal.setError(null);
+        }
+
+        tvHasil.setText("----------------- PEMBELIAN BERHASIL -----------------" + "\n Nama           :" + nama + "\nAsal             :" + Asal + "\nTujuan :" + Tujuan +
+                "Tanggal Keberangkatan : " + Tanggal + "\nKelas :" + hasil + "\nUsia" + Kereta + "\n" + NmK);
     }
 
     @Override
