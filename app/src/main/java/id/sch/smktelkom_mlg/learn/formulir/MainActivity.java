@@ -12,7 +12,7 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener {
 
     EditText etNm;
     EditText etAsal;
@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup rgKelas;
     CheckBox cbDew, cbAn;
     Spinner spK;
+    int nKereta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
         rgKelas = (RadioGroup) findViewById(R.id.radioGroupKelas);
         cbDew = (CheckBox) findViewById(R.id.checkBoxDew);
         cbAn = (CheckBox) findViewById(R.id.checkBoxAn);
-        cbDew.setOnCheckedChangeListener((CompoundButton.OnCheckedChangeListener) this);
-        cbAn.setOnCheckedChangeListener((CompoundButton.OnCheckedChangeListener) this);
+        cbDew.setOnCheckedChangeListener(this);
+        cbAn.setOnCheckedChangeListener(this);
         spK = (Spinner) findViewById(R.id.spinnerKereta);
 
         tvHasil = (TextView) findViewById(R.id.textViewHasil);
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 doClick();
         }
         });
+
     }
 
     private void doClick() {
@@ -99,6 +101,13 @@ public class MainActivity extends AppCompatActivity {
             etTujuan.setError(null);
         }
         tvHasil.setText("--------------- PEMBELIAN BERHASIL ---------------" + "\n Nama :" + nama + "\nAsal :" + Asal + "\nTujuan :" + Tujuan +
-                "\nKelas :" + hasil + "\nUsia" + Kereta + NmK);
+                "\nKelas :" + hasil + "\nUsia" + Kereta + "\n" + NmK);
+    }
+
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        if (isChecked) nKereta += 1;
+        else nKereta -= 1;
+        tvkereta.setText("Hobi (" + nKereta + " Terpilih");
     }
 }

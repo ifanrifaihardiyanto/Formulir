@@ -44,14 +44,11 @@
             android:layout_below="@+id/imageView"
             android:text="Nama" />
 
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+
         <EditText
             android:id="@+id/editTextNm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        </android.support.design.widget.TextInputLayout>
 
         <TextView
             android:id="@+id/textViewAsal"
@@ -59,14 +56,11 @@
             android:layout_height="wrap_content"
             android:text="Asal" />
 
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+
         <EditText
             android:id="@+id/editTextAsal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        </android.support.design.widget.TextInputLayout>
 
         <TextView
             android:id="@+id/textViewTujuan"
@@ -74,14 +68,11 @@
             android:layout_height="wrap_content"
             android:text="Tujuan" />
 
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+
         <EditText
             android:id="@+id/editTextTujuan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        </android.support.design.widget.TextInputLayout>
 
         <TextView
             android:id="@+id/textViewKelas"
@@ -112,11 +103,6 @@
                 android:layout_height="wrap_content"
                 android:text="Ekonomi" />
 
-            <TextView
-                android:id="@+id/textViewKrt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hasil" />
         </RadioGroup>
 
         <TextView
